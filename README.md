@@ -19,7 +19,7 @@ AGAC requiert les paquets PIP suivants :
  - scipy
  - scikit-image
 
-À installer via `pip3 install nomdupaquet` au préalable.
+À installer soit manuellement, soit en faisant `sudo pip3 install -r requirements.txt`.
 
 Un serveur Apache est à utiliser de préférence pour la réécriture des URL. Nginx et autres fonctionneront mais il faudra configurer à la main.
 
