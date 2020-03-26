@@ -10,3 +10,5 @@ Un serveur Apache est à utiliser de préférence pour la réécriture des URL. 
 PHP est requis, version >= 7.2.
 
 Postgres est requis, les paramètres de connexion à la base sont à inscrire dans include/db/conn.php (voir le fichier conn.php.example dans le même dossier).
+
+Voir README.md pour la suite.
