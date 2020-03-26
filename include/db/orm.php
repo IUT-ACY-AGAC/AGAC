@@ -816,8 +816,11 @@ abstract class DataModel implements JsonSerializable {
 
         // prepare
         $stmt = static::getConnection()->prepare($sql);
-        if (!$stmt || !$stmt->execute($params)) {
-            throw new Exception(sprintf('Unable to execute SQL statement. "%s" : %s', $sql, static::getConnection()->errorCode()));
+        if (!$stmt) {
+            throw new Exception(sprintf('Unable to prepare SQL statement. "%s" : %s / %s', $sql, static::getConnection()->errorCode(), implode(", ", static::getConnection()->errorInfo())));
+        }
+        if ($stmt->execute($params) === false) {
+            throw new Exception(sprintf('Unable to execute SQL statement. "%s" : %s / %s', $sql, static::getConnection()->errorCode(), implode(", ", static::getConnection()->errorInfo())));
         }
 
         if ($return === self::FETCH_NONE) {
