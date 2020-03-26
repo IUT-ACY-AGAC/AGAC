@@ -1,0 +1,5 @@
+<?php
+
+include_once "orm.php";
+
+DataModel::useConnection(new PDO("pgsql:host=HOST;port=5432;dbname=DATABASE;user=USERNAME;password=PASSWORD"));

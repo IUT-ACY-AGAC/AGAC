@@ -1,0 +1,13 @@
+AGAC requiert les paquets PIP suivant :
+ - opencv-python
+ - scipy
+ - scikit-image
+
+À installer via `pip3 install nomdupaquet` au préalable.
+
+PHP est requis, version >= 7.2.
+
+Postgres est requis, par défaut le site cherche le schéma "agac" de la base "agac",
+et se connecte avec le compte "agac" qui a pour mot de passe "A_g_A_c".
+
+Ces paramètres sont modifiables dans include/db/conn.php

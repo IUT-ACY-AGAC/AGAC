@@ -1,0 +1,1 @@
+<a class="pt-1 mt-2 btn btn-primary" href="./">Retour à l'accueil</a>

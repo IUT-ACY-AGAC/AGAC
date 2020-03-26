@@ -1,0 +1,3 @@
+storage/*
+include/db/conn.php
+.idea
