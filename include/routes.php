@@ -357,7 +357,7 @@ function get_current_route()
 function get_site_root()
 {
     return "//" . $_SERVER['HTTP_HOST'] .
-        preg_replace("#/" . preg_quote(get_current_route()) . "$#i", "", get_current_url());
+        str_replace("index.php", "", preg_replace("#/" . preg_quote(get_current_route()) . "$#i", "", get_current_url()));
 }
 
 function url($url)
