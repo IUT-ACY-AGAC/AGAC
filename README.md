@@ -1,3 +1,5 @@
+![](assets/logo.png)
+
 # AGAC – Application Géomatique d'Archives Cadastrales
 
 Projet de seconde année de DUT Informatique
